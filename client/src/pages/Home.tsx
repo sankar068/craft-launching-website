@@ -31,9 +31,9 @@ function pad(value: number) {
 function Header() {
   return (
     <header className="site-header">
-      <a className="header-brand" href="#top" aria-label="CRAFT home">
+      <a className="header-brand" href="#top" aria-label="CRAFTS home">
         <span className="brand-spark" aria-hidden="true">✦</span>
-        <span>CRAFT</span>
+        <span>CRAFTS</span>
       </a>
       <div className="status-label" aria-label="Launch status">
         <span className="status-dot" aria-hidden="true" />
@@ -144,8 +144,12 @@ export default function Home() {
         <section className="hero" aria-labelledby="hero-title">
           <div className="hero-copy">
             <p className="eyebrow">A new digital standard is arriving</p>
-            <h1 id="hero-title" className="wordmark" data-text="CRAFT">
-              CRAFT
+            <h1 id="hero-title" className="wordmark" data-text="CRAFTS">
+              <img
+                className="hero-logo"
+                src="/manus-storage/crafts-logo-transparent_56885007.png"
+                alt="CRAFTS — Since 2026"
+              />
             </h1>
             <p className="tagline">Digital experiences, crafted differently.</p>
           </div>

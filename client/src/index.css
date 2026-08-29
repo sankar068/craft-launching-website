@@ -182,7 +182,7 @@ a {
   min-height: 0;
   flex-direction: column;
   justify-content: center;
-  padding: clamp(3.2rem, 10vh, 8rem) 0 clamp(2.2rem, 5vh, 4rem);
+  padding: clamp(2rem, 5vh, 4rem) 0 clamp(1.5rem, 3vh, 2.5rem);
 }
 
 .hero-copy {
@@ -213,12 +213,21 @@ a {
   animation-delay: 150ms;
 }
 
+.hero-logo {
+  display: block;
+  width: clamp(16rem, 29vw, 28rem);
+  height: auto;
+  filter: invert(1) drop-shadow(0 0 1.2rem rgba(139, 124, 255, 0.08));
+}
+
 .wordmark::after {
   content: attr(data-text);
   position: absolute;
   inset: 0;
   z-index: -1;
   color: transparent;
+  font-size: 0.72em;
+  letter-spacing: -0.08em;
   -webkit-text-stroke: 1px rgba(139, 124, 255, 0.16);
   transform: translate(0.16em, 0.13em);
 }
@@ -236,7 +245,7 @@ a {
 .countdown-position {
   display: flex;
   justify-content: flex-end;
-  padding: clamp(3.8rem, 7vh, 6rem) clamp(0.2rem, 2vw, 2rem) 0 0;
+  padding: clamp(2rem, 4vh, 3.5rem) clamp(0.2rem, 2vw, 2rem) 0 0;
   animation: rise-in 1s var(--ease-out) both;
   animation-delay: 360ms;
 }
@@ -521,8 +530,8 @@ a {
 
   .hero {
     justify-content: center;
-    padding-top: 4.5rem;
-    padding-bottom: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
   }
 
   .hero-copy {
@@ -533,6 +542,10 @@ a {
     font-size: clamp(4.7rem, 21vw, 10rem);
   }
 
+  .hero-logo {
+    width: min(74vw, 17rem);
+  }
+
   .tagline {
     margin-left: 0.1rem;
     max-width: 15rem;
@@ -541,7 +554,7 @@ a {
 
   .countdown-position {
     justify-content: flex-start;
-    padding-top: 4.5rem;
+    padding-top: 3rem;
     padding-left: 0.8rem;
     padding-right: 0;
   }
@@ -593,6 +606,10 @@ a {
 
   .wordmark {
     font-size: 4.5rem;
+  }
+
+  .hero-logo {
+    width: min(78vw, 15rem);
   }
 
   .countdown-value {
